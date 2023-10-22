@@ -1,0 +1,36 @@
+{
+  "name": "miles-admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "commit": "ras git-commit",
+    "cleanup": "ras cleanup",
+    "format": "ras prettier-format",
+    "init-git": "ras init-git-hooks",
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint .",
+    "preinstall": "pnpm init-git"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rascaljs/cli": "0.4.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.52.0",
+    "eslint-config-rascal": "0.2.3",
+    "simple-git-hooks": "2.9.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5",
+    "lint-staged": "13.2.2"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm ras git-commit-verify",
+    "pre-commit": "pnpm lint && ras lint-staged"
+  }
+}
