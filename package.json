@@ -21,7 +21,8 @@
     "tsx": "tsx"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "@rascaljs/vue-materials": "0.1.2"
   },
   "devDependencies": {
     "@rascaljs/cli": "0.4.0",
