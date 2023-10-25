@@ -15,6 +15,13 @@ export default defineConfig(configEnv => {
       }
     },
     plugins: setupVitePlugins(),
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "./src/styles/scss/global.scss" as *;`
+        }
+      }
+    },
     server: {
       host: '0.0.0.0',
       port: 3200,
