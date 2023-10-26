@@ -1,6 +1,6 @@
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
+import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
 
 export default function unplugin() {
   return [
@@ -15,7 +15,11 @@ export default function unplugin() {
     }),
     Components({
       dts: 'src/typings/components.d.ts',
-      resolvers: [NaiveUiResolver()]
+      resolvers: [
+        PrimeVueResolver({
+          importTheme: 'lara-dark-teal'
+        })
+      ]
     })
   ];
 }

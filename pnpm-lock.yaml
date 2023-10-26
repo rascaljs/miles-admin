@@ -8,6 +8,12 @@ dependencies:
   '@rascaljs/vue-materials':
     specifier: 0.1.4
     version: 0.1.4(vue@3.3.6)
+  primeicons:
+    specifier: ^6.0.1
+    version: 6.0.1
+  primevue:
+    specifier: ^3.37.0
+    version: 3.37.0(vue@3.3.6)
   vue:
     specifier: ^3.3.4
     version: 3.3.6(typescript@5.2.2)
@@ -4340,6 +4346,18 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dev: true
+
+  /primeicons@6.0.1:
+    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primevue@3.37.0(vue@3.3.6):
+    resolution: {integrity: sha512-azwnnQS4+HHJHrh07P0cz+8Nvqo6C08znwvPDyiILwVPkwIrTtgNVmYQtQ9HjLgwax+lC7scMetJpdKcNQU//g==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.6(typescript@5.2.2)
+    dev: false
 
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}
