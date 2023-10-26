@@ -12,5 +12,8 @@ declare module 'vue' {
     NButton: typeof import('naive-ui')['NButton']
     NSpace: typeof import('naive-ui')['NSpace']
     Panel: typeof import('primevue/panel')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+    SplitButton: typeof import('primevue/splitbutton')['default']
   }
 }

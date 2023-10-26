@@ -15,11 +15,7 @@ export default function unplugin() {
     }),
     Components({
       dts: 'src/typings/components.d.ts',
-      resolvers: [
-        PrimeVueResolver({
-          importTheme: 'lara-dark-teal'
-        })
-      ]
+      resolvers: [PrimeVueResolver()]
     })
   ];
 }
