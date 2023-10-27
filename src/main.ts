@@ -1,12 +1,14 @@
-import '@/assets/styles.scss';
 import { createApp } from 'vue';
-import '@/styles/css/global.css';
 import App from './App.vue';
-import { setupAssets } from '@/plugins';
+import 'uno.css';
+import '@/styles/scss/prime-vue/index.scss';
+import { setupAssets, setupPrimeVue } from '@/plugins';
 function setupApp() {
+  const app = createApp(App);
   // import assets: js、css
   setupAssets();
-  const app = createApp(App);
+  // import primeVue
+  setupPrimeVue(app);
   // mount app
   app.mount('#app');
 }

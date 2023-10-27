@@ -1,6 +1,6 @@
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
-import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
+// import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
 
 export default function unplugin() {
   return [
@@ -14,8 +14,8 @@ export default function unplugin() {
       dts: 'src/typings/auto-imports.d.ts'
     }),
     Components({
-      dts: 'src/typings/components.d.ts',
-      resolvers: [PrimeVueResolver()]
+      dts: 'src/typings/components.d.ts'
+      // resolvers: [PrimeVueResolver()]
     })
   ];
 }
