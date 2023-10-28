@@ -34,7 +34,7 @@ export function useLayout(): {
     menuMode: 'static',
     theme: 'lara-light-indigo',
     scale: 14,
-    activeMenuItem: <string | null>null
+    activeMenuItem: null
   });
 
   const layoutState: LayoutState = reactive({

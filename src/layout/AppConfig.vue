@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import { useLayout } from '@/layout/composables/layout';
 
 defineProps({
@@ -130,6 +129,7 @@ function applyScale() {
 
       <h5>Ripple Effect</h5>
       <InputSwitch v-model="layoutConfig.ripple"></InputSwitch>
+      {{ layoutConfig.ripple }}
     </template>
 
     <h5>Bootstrap</h5>

@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BlockViewer: typeof import('./../components/BlockViewer.vue')['default']
     Button: typeof import('primevue/button')['default']
     Column: typeof import('primevue/column')['default']
     InputSwitch: typeof import('primevue/inputswitch')['default']
